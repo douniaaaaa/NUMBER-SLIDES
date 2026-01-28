@@ -1,7 +1,7 @@
 #include <time.h>
-#include <SDL_ttf.h>
-#include <SDL_mixer.h>
-
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_mixer.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
@@ -67,7 +67,6 @@ void PrepareGrid() {
         grid[x][y] = (rand() % 2 + 1) * 2;
     }
 }
-
 // Structure to save entire game state
 typedef struct {
     int grid[GRID_SIZE][GRID_SIZE];
